@@ -1,0 +1,34 @@
+.cityContainer {
+  margin: auto;
+  padding: 10px 20px 30px;
+  width: 300px;
+  position: relative;
+}
+
+.cityInputGroup {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px;
+}
+
+.btnPrimary,
+.btnPrimary:active,
+.btnPrimary:visited {
+  background-color: var(--main-color) !important;
+  border: 0px !important;
+}
+
+.btnPrimary:hover {
+  background-color: var(--main-darker-color) !important;
+}
+
+.alertDanger {
+  border: var(--alert-border-color) solid 1px;
+  margin-top: 5px;
+  background-color: var(--alert-bg-color);
+  color: var(--alert-color);
+  padding: 5px;
+}
+
+

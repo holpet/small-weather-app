@@ -1,0 +1,81 @@
+:root {
+  --main-color: #00afa0;
+  --main-bg-color: #e3fffd;
+  --secondary-color: #23efab;
+  --dark-color: #00534c;
+  --main-darker-color: #027067;
+
+  --wrapper-bg-color: rgba(112, 255, 236, 0.3);
+
+  --alert-border-color: rgb(211, 95, 0);
+  --alert-bg-color: rgba(216, 104, 0, 0.3);
+  --alert-color: rgb(153, 69, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  background-image: url("../img/foggy-birds.png");
+  text-align: center;
+  margin: 2.5rem;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2.3rem !important;
+  margin: 1.3rem 1.3rem 1.8rem;
+  color: var(--dark-color);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold !important;
+  background: -webkit-linear-gradient(
+    180deg,
+    var(--secondary-color),
+    var(--dark-color)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4vw;
+  }
+}
+
+h3 {
+  color: var(--main-darker-color);
+  margin: 0.8rem;
+  font-size: 1.6rem !important;
+}
+
+h3.tempTitle {
+  font-size: 3rem !important;
+  font-weight: bold;
+}
+
+img {
+  width: 120;
+  height: auto;
+}
+
+input,
+input:focus {
+  color: var(--main-darker-color) !important;
+  text-transform: capitalize !important;
+}
+input::placeholder {
+  opacity: 0.3;
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: normal;
+  font-size: inherit;
+}
