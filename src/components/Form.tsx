@@ -24,7 +24,9 @@ export default function Form({
     if (inputVal.current === null) return;
     if (inputVal.current.value.length === 0) return;
     const data = await fetchWeatherData(inputVal.current.value);
-    console.log("status: ", data.status);
+    console.log("data", data);
+
+    //console.log("status: ", data.status);
 
     handleData(data);
     if (data.status !== 200) {
